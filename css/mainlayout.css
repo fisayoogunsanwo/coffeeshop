@@ -1,0 +1,200 @@
+/* Nice green color */
+/* rgb(45, 60, 41) */
+
+body{background-color:#5b2c12;}
+
+ul{display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+padding-inline-start: 15px;
+padding-inline-end: 15px;}
+    
+    li{list-style-type:none;
+    }
+    
+    a{
+    text-decoration: none;
+    color: #5b2c12;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius:4px;
+    padding: 5px 10px;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+    }
+    
+    a:hover{
+        background-color: #5b2c12;
+        color:#d1ab95;
+        transform: scale(1.1);
+    }
+    
+    .menuButton{background-color: #5b2c12;
+        height:30px;
+        width:40px;
+    border: 1px solid #eab77daf;;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+ 
+    }
+    
+    .mainLogo{width:60px;
+        height:60px;}
+    
+    .menuButton div{width:20px;
+        height:3.5px;
+        background-color:  #e9b77ea3;
+        border-radius:2px;
+        
+    }
+    
+    .menuButton:hover{cursor: pointer;}
+    
+    
+    
+    @media screen and (min-width:0){
+        .desktop{display:none;}
+    }
+    
+    @media screen and (min-width:320px){
+        .desktop{display:none;}
+        ul{justify-content: space-between;}
+       
+    }
+    
+    @media screen and (min-width:760px){
+        .desktop{display:flex;
+        }
+        .mobile{display:none;}
+      
+    }    
+
+/* ----------------------------- */
+.grid-container {
+    display: grid;
+    grid-template-columns: 32% 33% 32%;
+    gap: 12px;
+    background-color: #5b2c12;
+    padding: 10px;
+    width:100vw;
+    height: 100%;
+    border:0.8px solid #301304;
+    box-sizing: border-box;
+   
+  }
+  
+  .grid-container > div {
+  
+    background-color: #e9b77ea3;
+    text-align: center;
+    height:auto;
+    font-size: 30px;
+    border-radius: 5px;
+    
+
+  }
+  
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+ 
+  }
+  
+  .item2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+  }
+
+  .item4 {
+   grid-column-start: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .item2 > img,.item3 > img,.item4 > img,.item5 > img,
+  .item6 > img,.item7 > img,.item8 > img{
+      width:100%;
+    height:auto;
+    
+    border-radius: 5px 5px 0 0;}
+  
+  .item5 {
+    grid-column-start: 1;
+     grid-column-end: 3;
+     grid-row-start: 4;
+     grid-row-end: 6;
+   }
+
+  .item8 {
+    grid-column-start: 1;
+     grid-column-end: 4;
+   }
+  
+  button{border-radius: 3px;
+border:none}
+  #auto{background-color: greenyellow;}
+  #once{background-color: crimson;}
+
+
+  /* ITEM 2, ITEM 5 */
+    
+  .item2 .underimage,.item5 .underimage{padding: 10px 25px 25px 25px;
+  }
+
+  .item2 h2,.item5 h2, .item8{
+      font-size: 0.8em;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      text-align: left;
+  }
+  .item2 h5,.item5 h5{
+      font-size: 0.6em;
+      font-weight: lighter;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      text-align: left;
+  }
+  .lastline{
+display: flex;
+justify-content: space-between;
+
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.icons{width:18px;
+height: 18.5px;
+padding-right:5px}
+
+.comments{display:flex;
+justify-content: space-between;
+align-items: center;}
+.comments span{font-size: 12px;
+    padding-right: 12px;
+    font-weight: bold;
+}
+.story{cursor:pointer}
+
+.buttons{
+  text-align: left;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  padding: 3px 7px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  font-weight:bold;
+}
+
+  /* ITEM 3,4,6,7 */
+
+.item3 h5, .item4 h5, .item6 h5, .item7 h5{
+    font-weight: bold;
+    font-size: 0.5em;
+    text-align: left;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.item3 .underimage, .item4 .underimage, .item6 .underimage, .item7 .underimage{padding: 5px 12px 12px 12px;}
